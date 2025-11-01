@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# To-Do List Barroca
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Uma aplicação de lista de tarefas elegante, inspirada no estilo barroco, onde a organização e o design se encontram.
 
-## Available Scripts
+<p align="center">
+  <img src="public/todo-list.png" width="600" alt="To-Do List Barroca Preview">
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.2.0-blue?logo=react" alt="React Badge"/>
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript" alt="JavaScript Badge"/>
+  <img src="https://img.shields.io/badge/CSS3-Barroco%20Design-gold?logo=css3" alt="CSS3 Badge"/>
+  <img src="https://img.shields.io/badge/Storage-LocalStorage-green?logo=database" alt="LocalStorage Badge"/>
+</p>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✅ **Adicionar Tarefas** - Cria novas tarefas facilmente.  
+- ✅ **Filtrar por Estado** - Mostra todas, apenas as ativas ou as concluídas.  
+- ✅ **Pesquisar Tarefas** - Pesquisa por texto em tempo real.  
+- ✅ **Guardar Localmente** - A tua lista é guardada no `localStorage` (não se perde no refresh).  
+- ✅ **Eliminar com Confirmação** - Podes apagar uma tarefa, as concluídas ou toda a lista — sempre com confirmação.  
+- ✅ **Interface Arrastável** - Move o painel da lista para qualquer posição no ecrã.  
+- ✅ **Design Barroco Responsivo** - Interface elegante com fundo dourado e efeito de vidro.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- **React** - estrutura principal da aplicação  
+- **LocalStorage API** - armazenamento persistente  
+- **CSS personalizado** - estilo inspirado no barroco clássico  
+- **Hooks React (useState, useEffect)** - gestão de estado e ciclo de vida  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como Executar Localmente
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para iniciar a aplicação em modo de desenvolvimento, basta executar o comando abaixo no terminal:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm start
+```
