@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TaskInput from "./componentes/TaskInput";
-import TaskList from "./componentes/p1/TaskList";
+import TaskList from "./componentes/TaskList";
 import TaskFilter from "./componentes/TaskFilter";
 import ConfirmDialog from "./componentes/ConfirmDialog";
 import background from "./assets/baroque-bg.png";

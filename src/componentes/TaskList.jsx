@@ -1,4 +1,4 @@
-import TaskItem from "../TaskItem";
+import TaskItem from "./TaskItem";
 
 function TaskList({ tasks, onToggle, onDelete }) {
   if (tasks.length === 0) return <p>Nenhuma tarefa encontrada.</p>;
