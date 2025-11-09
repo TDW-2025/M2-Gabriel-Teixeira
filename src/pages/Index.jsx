@@ -1,15 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import styles from "../css/Index.module.css";
 
 function Index() {
-
   return (
-    <div>
-        <h1>Exercises TDW 👾</h1>
-        <Link to="/pageTodolist">Ir para To-Do List</Link>
-        <br />
-        <Link to="/pageTodolist2">Ir para To-Do List fake</Link>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Exercises TDW 👾</h1>
+
+      <div className={styles.classList}>
+        <Link to="/pageTodolist" className={styles.linkButton}>
+          Class 07 <span className={styles.arrow}>→</span>
+        </Link>
+
+        <Link to="/pageTodolist2" className={styles.linkButton}>
+          Class 08 <span className={styles.arrow}>→</span>
+        </Link>
+
+        <Link to="#" className={styles.linkButton}>
+          Class 09 <span className={styles.arrow}>→</span>
+        </Link>
+      </div>
+
+      <p className={styles.comingSoon}>Coming soon 🚧</p>
     </div>
   );
 }

@@ -5,11 +5,9 @@ import TaskFilter from "../componentes/p1/TaskFilter";
 import ConfirmDialog from "../componentes/p1/ConfirmDialog";
 import background from "../assets/baroque-bg.png";
 
-import "../App.css";
+import "../css/App.css";
 
 function PageTodolist() {
-
-  // adicionar aqui o react router, depois entre cada pagia usar o Link do react router 
 
   const [tasks, setTasks] = useState(() => {
     const saved = localStorage.getItem("tasks");

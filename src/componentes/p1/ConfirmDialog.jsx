@@ -1,4 +1,4 @@
-import "../../App.css";
+import "../../css/App.css";
 
 
 function ConfirmDialog({ visible, title, message, onConfirm, onCancel }) {
