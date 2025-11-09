@@ -1,24 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import PageTodolist from "./pages/PageTodolist.jsx";
 import PageTodolist2 from "./pages/PageTodolist2.jsx";
 import Index from "./pages/Index.jsx";
 
+import { TodoProvider, TodoContext } from "./context/TodoContext";
+import "./css/App.css";
 
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+function TitleUpdater() {
+  const { tasks } = useContext(TodoContext);
 
-import "./App.css";
+  useEffect(() => {
+    document.title =
+      tasks.length === 0
+        ? "To-Do List — sem tarefas"
+        : `To-Do List (${tasks.length} tarefas)`;
+  }, [tasks]);
+
+  return null;
+}
 
 function App() {
-
   return (
-
-     <Router> 
-      <Routes>
-        <Route path="/" element={<Index />}/>
-        <Route path="/pageTodolist" element={<PageTodolist />} />
-        <Route path="/pageTodolist2" element={<PageTodolist2 />} />
-      </Routes>
-     </Router>
+    <TodoProvider>
+      <Router>
+        <TitleUpdater />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/pageTodolist" element={<PageTodolist />} />
+          <Route path="/pageTodolist2" element={<PageTodolist2 />} />
+        </Routes>
+      </Router>
+    </TodoProvider>
   );
 }
 
