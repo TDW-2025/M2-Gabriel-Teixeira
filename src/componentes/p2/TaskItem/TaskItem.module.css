@@ -1,0 +1,49 @@
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f5ec;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border: 1px solid #d2b48c;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+}
+
+.taskItem:hover {
+  background: #f5edd7;
+  transform: translateY(-2px);
+}
+
+.taskItem span {
+  flex: 1;
+  text-align: left;
+  font-size: 1rem;
+  color: #3e2b10;
+}
+
+.done span {
+  text-decoration: line-through;
+  color: #9c8c6a;
+  transition: 0.3s;
+}
+
+.taskItem input[type="checkbox"] {
+  margin-right: 12px;
+  accent-color: #b8860b;
+}
+
+.taskItem button {
+  background: none;
+  border: none;
+  color: #b71c1c;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.taskItem button:hover {
+  transform: scale(1.2);
+  color: #8b0000;
+}

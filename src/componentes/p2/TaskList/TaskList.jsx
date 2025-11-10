@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import TaskItem from "./TaskItem";
-import styles from "../../css/App.module.css";
-
+import TaskItem from "../TaskItem/TaskItem";
+import styles from "../TaskList/TaskList.module.css";
 function TaskList({ tasks, onToggle, onDelete }) {
   if (tasks.length === 0) return <p>Nenhuma tarefa encontrada.</p>;
 

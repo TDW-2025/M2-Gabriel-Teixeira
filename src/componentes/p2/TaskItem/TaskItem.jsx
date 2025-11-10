@@ -1,6 +1,5 @@
-import React from "react";
 import PropTypes from "prop-types";
-import styles from "../../css/App.module.css";
+import styles from "../TaskItem/TaskItem.module.css";
 
 function TaskItem({ task, onToggle, onDelete }) {
   return (

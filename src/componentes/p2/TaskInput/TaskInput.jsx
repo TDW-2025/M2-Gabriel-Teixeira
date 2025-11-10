@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styles from "../../css/App.module.css";
+import styles from "../TaskInput/TaskInput.module.css";
 
 function TaskInput({ onAdd }) {
   const [text, setText] = useState("");

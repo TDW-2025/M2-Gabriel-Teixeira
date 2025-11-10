@@ -90,3 +90,47 @@ Para iniciar a aplicação em modo de desenvolvimento, basta executar o comando 
 ```bash
 npm start
 ```
+
+## Aula 9
+### ATM com Redux Toolkit
+> Uma aplicação de caixa multibanco simulada, utilizando Redux Toolkit para gestão do estado, com autenticação por PIN e segunda verificação via código aleatório (simulado no console)
+
+
+<p align="center">
+  <img src="./src/assets/AMT.png" width="600" alt="To-Do List Barroca Preview">
+</p>
+<p align="center"> 
+  <img src="https://img.shields.io/badge/React-18.2.0-blue?logo=react" alt="React Badge"/> <img src="https://img.shields.io/badge/Redux_Toolkit-1.9.5-purple?logo=redux" alt="Redux Badge"/> 
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript" alt="JavaScript Badge"/> 
+  <img src="https://img.shields.io/badge/CSS3-Modules-orange?logo=css3" alt="CSS Modules Badge"/> 
+</p>
+
+---
+### Funcionalidades Implementadas
+
+- ✅ **Saldo Atual** – Exibe o saldo disponível do Utilizador.
+- ✅ **Depositar Dinheiro** – Incrementa o saldo ao clicar no botão “Depositar”.
+- ✅ **Levantar Dinheiro** – Decrementa o saldo ao clicar no botão “Levantar”.
+- ✅ **Verificação de PIN** – Só permite operações se o PIN estiver correto.
+- ✅ **Prevenção de Saldo Negativo** – Não permite levantar mais do que o saldo disponível.
+- ✅ **Mensagens Informativa** – Feedback para operações inválidas ou sucesso.
+- ✅ **Redux Toolkit** – Store mantém múltiplas contas, actions separadas para deposit/withdraw.
+
+---
+
+### Tecnologias Utilizadas
+
+- **Redux Toolkit** – Gestão global do estado da aplicação, incluindo múltiplas contas.
+- **React Redux** – Ligação entre componentes React e a store Redux.
+- **Redux DevTools** – Ferramenta para inspeção e debug do estado global e actions.
+- **React Developer Tools** – Ferramenta de inspeção e debug de componentes React.
+- **Hooks do React (`useState`, `useEffect`)** – Gestão local do estado, efeitos e interações do Utilizadores.
+
+### Como Executar Localmente
+
+Para iniciar a aplicação em modo de desenvolvimento, basta executar o comando abaixo no terminal:
+
+```bash
+npm start
+```
+
