@@ -1,0 +1,41 @@
+.taskInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 26px;
+  gap: 10px;
+}
+
+.taskInput input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1.5px solid #c9a74a;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.2s;
+  background: #fffef7;
+  color: #4a3720;
+}
+
+.taskInput input:focus {
+  outline: none;
+  border-color: #b8860b;
+  box-shadow: 0 0 6px rgba(184, 134, 11, 0.4);
+}
+
+.taskInput button {
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.taskInput button:hover {
+  background: linear-gradient(135deg, #e1c16e, #8b6914);
+  transform: translateY(-1px);
+}

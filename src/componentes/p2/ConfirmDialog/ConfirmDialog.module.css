@@ -1,0 +1,51 @@
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 30, 10, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.dialogBox {
+  background: linear-gradient(145deg, #fff8ed, #f8e7c4);
+  border: 2px solid #b8860b;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  padding: 24px 30px;
+  text-align: center;
+  color: #4a3720;
+  max-width: 340px;
+  animation: fadeIn 0.3s ease;
+}
+
+.dialogButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.confirmBtn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #66bb6a, #2e7d32);
+}
+
+.cancelBtn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #ef5350, #b71c1c);
+}

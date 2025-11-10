@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "../../css/App.module.css";
+import styles from "../ConfirmDialog/ConfirmDialog.module.css";
 
 function ConfirmDialog({ visible, title, message, onConfirm, onCancel }) {
   if (!visible) return null;

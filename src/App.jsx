@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PageTodolist from "./pages/PageTodolist.jsx";
 import PageTodolist2 from "./pages/PageTodolist2.jsx";
 import Index from "./pages/Index.jsx";
+import ATM from "./pages/ATM.jsx";
 
 import { TodoProvider, TodoContext } from "./context/TodoContext";
 import "./css/App.css";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Index />} />
           <Route path="/pageTodolist" element={<PageTodolist />} />
           <Route path="/pageTodolist2" element={<PageTodolist2 />} />
+          <Route path="/atm" element={<ATM />} />
         </Routes>
       </Router>
     </TodoProvider>

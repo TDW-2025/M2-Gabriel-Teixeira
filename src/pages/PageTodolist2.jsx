@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
-import TaskInput from "../componentes/p2/TaskInput";
-import TaskList from "../componentes/p2/TaskList";
-import TaskFilter from "../componentes/p2/TaskFilter";
-import ConfirmDialog from "../componentes/p2/ConfirmDialog";
+import TaskInput from "../componentes/p2/TaskInput/TaskInput";
+import TaskList from "../componentes/p2/TaskList/TaskList";
+import TaskFilter from "../componentes/p2/TaskFilter/TaskFilter";
+import ConfirmDialog from "../componentes/p2/ConfirmDialog/ConfirmDialog";
 import background from "../assets/baroque-bg.png";
 import styles from "../css/App.module.css";
 

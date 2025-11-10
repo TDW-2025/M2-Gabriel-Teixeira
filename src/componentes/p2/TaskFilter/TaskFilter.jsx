@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "../../css/App.module.css";
+import styles from "./TaskFilter.module.css"; // ✅ caminho correto
 
 function TaskFilter({ filter, setFilter, search, setSearch }) {
   return (

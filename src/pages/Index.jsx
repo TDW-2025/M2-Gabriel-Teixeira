@@ -16,7 +16,7 @@ function Index() {
           Class 08 <span className={styles.arrow}>→</span>
         </Link>
 
-        <Link to="#" className={styles.linkButton}>
+        <Link to="/atm" className={styles.linkButton}>
           Class 09 <span className={styles.arrow}>→</span>
         </Link>
       </div>
