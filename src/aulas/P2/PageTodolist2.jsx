@@ -1,12 +1,11 @@
 import React, { useState, useContext } from "react";
-import TaskInput from "../componentes/p2/TaskInput/TaskInput";
-import TaskList from "../componentes/p2/TaskList/TaskList";
-import TaskFilter from "../componentes/p2/TaskFilter/TaskFilter";
-import ConfirmDialog from "../componentes/p2/ConfirmDialog/ConfirmDialog";
-import background from "../assets/baroque-bg.png";
-import styles from "../css/App.module.css";
-
-import { TodoContext } from "../context/TodoContext";
+import TaskInput from "../../componentes/p2/TaskInput/TaskInput";
+import TaskList from "../../componentes/p2/TaskList/TaskList";
+import TaskFilter from "../../componentes/p2/TaskFilter/TaskFilter";
+import ConfirmDialog from "../../componentes/p2/ConfirmDialog/ConfirmDialog";
+import background from "../../assets/baroque-bg.png";
+import styles from "./App.module.css";
+import { TodoContext } from "../../context/TodoContext";
 
 function PageTodolist2() {
   const { tasks, setTasks } = useContext(TodoContext);

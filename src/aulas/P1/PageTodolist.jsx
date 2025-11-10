@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import TaskInput from "../componentes/p1/TaskInput";
-import TaskList from "../componentes/p1/TaskList";
-import TaskFilter from "../componentes/p1/TaskFilter";
-import ConfirmDialog from "../componentes/p1/ConfirmDialog";
-import background from "../assets/baroque-bg.png";
+import TaskInput from "../../componentes/p1/TaskInput";
+import TaskList from "../../componentes/p1/TaskList";
+import TaskFilter from "../../componentes/p1/TaskFilter";
+import ConfirmDialog from "../../componentes/p1/ConfirmDialog";
+import background from "../../assets/baroque-bg.png";
+import "../../css/App.css";
 
-import "../css/App.css";
 
 function PageTodolist() {
 
