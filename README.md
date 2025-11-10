@@ -124,7 +124,7 @@ npm start
 - **React Redux** – Ligação entre componentes React e a store Redux.
 - **Redux DevTools** – Ferramenta para inspeção e debug do estado global e actions.
 - **React Developer Tools** – Ferramenta de inspeção e debug de componentes React.
-- **Hooks do React (`useState`, `useEffect`)** – Gestão local do estado, efeitos e interações do usuário.
+- **Hooks do React (`useState`, `useEffect`)** – Gestão local do estado, efeitos e interações do Utilizadores.
 
 ### Como Executar Localmente
 
