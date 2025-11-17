@@ -1,0 +1,13 @@
+.app {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at top, #0a0f24, #020409 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+  text-align: center;
+  overflow: hidden;
+}
