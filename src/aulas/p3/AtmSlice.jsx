@@ -48,19 +48,10 @@ export const atmSlice = createSlice({
         state.message = "Faça login primeiro!";
       }
     },
-    resetMessage: (state,action) => {
+    resetMessage: (state) => {
       state.message = "";
-      if (state.currentUser === null) {
-        state.message = "Faça login primeiro!";
-      }
-      else if (state.message === action.payload) {
-        state.message = "Operação efetuada com sucesso!";
-      }
-      else {
-        state.message = "";
-      }
-
     }
+
   }
 });
 

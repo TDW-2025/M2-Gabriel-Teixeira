@@ -67,14 +67,16 @@ function ATM() {
     setStage("enterPin");
   };
 
-  const uptdateMessage = (msg) => {
-    // alert(msg);
-    timeout = setTimeout(() => {
-      dispatch(resetMessage());
-    }, 3000);
-    return () => clearTimeout(timeout);
+  useEffect(() => {
+    if (message) {
+      const timeout = setTimeout(() => {
+        dispatch(resetMessage());
+      }, 3000);
 
-  }
+      return () => clearTimeout(timeout);
+    }
+  }, [message, dispatch]);
+
 
   const currentUserData = currentUser !== null ? users[currentUser] : null;
 
@@ -126,7 +128,6 @@ function ATM() {
 
       {message && (
         <div className={styles.message} >
-          {uptdateMessage(message)}
           <p>{message}</p>
           <button onClick={() => dispatch(resetMessage())}>X</button>
         </div>
