@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PageTodolist from "./aulas/P1/PageTodolist.jsx";
 import PageTodolist2 from "./aulas/P2/PageTodolist2.jsx";
 import Index from "./pages/Index.jsx";
-import ATM from "./aulas/p3/ATM.jsx";
+import ATM from "./aulas/P3/ATM.jsx";
 
 import { TodoProvider, TodoContext } from "./context/TodoContext";
 
