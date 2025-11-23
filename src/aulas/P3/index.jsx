@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import atmReducer from "../aulas/p3/AtmSlice";
+import atmReducer from "./AtmSlice";
 
 export const store = configureStore({
   reducer: {

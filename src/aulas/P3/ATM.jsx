@@ -131,6 +131,8 @@ function ATM() {
           <p>{message}</p>
           <button onClick={() => dispatch(resetMessage())}>X</button>
         </div>
+    
+        
       )}
     </div>
   );

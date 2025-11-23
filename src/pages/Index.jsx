@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../css/Index.module.css";
 
-function Index() {
+export default function Index() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Exercises TDW 👾</h1>
@@ -11,13 +11,14 @@ function Index() {
         <Link to="/pageTodolist" className={styles.linkButton}>
           Class 07 <span className={styles.arrow}>→</span>
         </Link>
-
         <Link to="/pageTodolist2" className={styles.linkButton}>
           Class 08 <span className={styles.arrow}>→</span>
         </Link>
-
         <Link to="/atm" className={styles.linkButton}>
           Class 09 <span className={styles.arrow}>→</span>
+        </Link>
+        <Link to="/catapi" className={styles.linkButton}>
+          Class 10 <span className={styles.arrow}>→</span>
         </Link>
       </div>
 
@@ -25,5 +26,3 @@ function Index() {
     </div>
   );
 }
-
-export default Index;

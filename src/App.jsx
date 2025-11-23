@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import PageTodolist from "./aulas/P1/PageTodolist.jsx";
 import PageTodolist2 from "./aulas/P2/PageTodolist2.jsx";
+import ATM from "./aulas/P3/ATM.jsx";
+import CatApi from "./aulas/P4/catApi.jsx";
 import Index from "./pages/Index.jsx";
-import ATM from "./aulas/p3/ATM.jsx";
-
 
 import { TodoProvider, TodoContext } from "./context/TodoContext.jsx";
 
@@ -22,7 +22,7 @@ function TitleUpdater() {
   return null;
 }
 
-function App() {
+export default function App() {
   return (
     <TodoProvider>
       <Router>
@@ -32,10 +32,9 @@ function App() {
           <Route path="/pageTodolist" element={<PageTodolist />} />
           <Route path="/pageTodolist2" element={<PageTodolist2 />} />
           <Route path="/atm" element={<ATM />} />
+          <Route path="/catapi" element={<CatApi />} />
         </Routes>
       </Router>
     </TodoProvider>
   );
 }
-
-export default App;
